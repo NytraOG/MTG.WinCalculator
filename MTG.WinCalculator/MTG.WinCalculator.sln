@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTG.WinCalculator", "MTG.WinCalculator\MTG.WinCalculator.csproj", "{61AF4433-CB99-48E0-8D95-1BFE098B66F2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTG.WinCalculator.ClassLib", "ClassLib\MTG.WinCalculator.ClassLib.csproj", "{940E0CA5-9F67-4BD2-B7A4-C44B5ED6CF17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTG.WinCalculator.Tests", "MTG.WinCalculator.Tests\MTG.WinCalculator.Tests.csproj", "{5F0012A4-A062-4726-961E-18E999004F09}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{61AF4433-CB99-48E0-8D95-1BFE098B66F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61AF4433-CB99-48E0-8D95-1BFE098B66F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61AF4433-CB99-48E0-8D95-1BFE098B66F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{940E0CA5-9F67-4BD2-B7A4-C44B5ED6CF17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{940E0CA5-9F67-4BD2-B7A4-C44B5ED6CF17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{940E0CA5-9F67-4BD2-B7A4-C44B5ED6CF17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{940E0CA5-9F67-4BD2-B7A4-C44B5ED6CF17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F0012A4-A062-4726-961E-18E999004F09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F0012A4-A062-4726-961E-18E999004F09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F0012A4-A062-4726-961E-18E999004F09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F0012A4-A062-4726-961E-18E999004F09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
