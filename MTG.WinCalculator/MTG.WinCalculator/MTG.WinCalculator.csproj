@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLib\MTG.WinCalculator.ClassLib.csproj">
+      <Project>{940e0ca5-9f67-4bd2-b7a4-c44b5ed6cf17}</Project>
+      <Name>MTG.WinCalculator.ClassLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

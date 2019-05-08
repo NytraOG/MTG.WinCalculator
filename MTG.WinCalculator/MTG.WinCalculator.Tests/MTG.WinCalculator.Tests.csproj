@@ -49,10 +49,19 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UnitTests\CardTests.cs" />
+    <Compile Include="UnitTests\EnvironmentTests.cs" />
+    <Compile Include="UnitTests\PlayerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLib\MTG.WinCalculator.ClassLib.csproj">
+      <Project>{940e0ca5-9f67-4bd2-b7a4-c44b5ed6cf17}</Project>
+      <Name>MTG.WinCalculator.ClassLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
