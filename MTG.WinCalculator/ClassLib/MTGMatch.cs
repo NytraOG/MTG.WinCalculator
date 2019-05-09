@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ClassLib
 {
-    public class Match
+    public class MtgMatch
     {
-        public Match()
+        public MtgMatch()
         {
             ListOfPlayers = new List<Player>();
         }
@@ -18,6 +18,11 @@ namespace ClassLib
         public void AddPlayerToMatch(Player player)
         {
             ListOfPlayers.Add(player);
+        }
+
+        public void RemovePlayerFromMatch(Player player2)
+        {
+            throw new NotImplementedException();
         }
     }
 }

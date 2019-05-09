@@ -1,7 +1,7 @@
 ﻿using System.Text.RegularExpressions;
 using ClassLib;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Match = ClassLib.Match;
+using MtgMatch = ClassLib.MtgMatch;
 
 namespace MTG.WinCalculator.Tests.UnitTests
 {
@@ -13,9 +13,11 @@ namespace MTG.WinCalculator.Tests.UnitTests
         [DataRow("", "40", 40)]
         [DataRow("frank", "", 20)]
         [DataRow("karl", "0", 20)]
-        [DataRow("karl", "-20", 20)]
+        [DataRow("fred", "-20", 20)]
         [DataRow("karl", "30", 30)]
         [DataRow("karl", "xD", 20)]
+        [DataRow("Annegret", "12x3Ffg5", 20)]
+        [DataRow("Annegret", "55981364", 55981364)]
         public void SpielerMitKorrektenWertenErzeugen(string name, string startingLifeTotal, int expectedResult)
         {
             //Arrange & Act
@@ -31,7 +33,7 @@ namespace MTG.WinCalculator.Tests.UnitTests
         public void MatchAnlegenUndSpielerHinzufügen()
         {
             //Arrange
-            var match   = new Match();
+            var match   = new MtgMatch();
             var player1 = new Player();
             var player2 = new Player();
 
@@ -41,6 +43,25 @@ namespace MTG.WinCalculator.Tests.UnitTests
 
             //Assert
             Assert.AreEqual(2, match.ListOfPlayers.Count);
+        }
+
+        [TestMethod]
+        public void SpielerAusMatchEntfernen()
+        {
+            //Arrange
+            var match = new MtgMatch();
+            var player1 = new Player();
+            var player2 = new Player();
+
+            //Act
+            match.AddPlayerToMatch(player1);
+            match.AddPlayerToMatch(player2);
+
+            match.RemovePlayerFromMatch(player1);
+            match.RemovePlayerFromMatch(player2);
+
+            //Assert
+            Assert.AreEqual(0, match.ListOfPlayers.Count);
         }
     }
 }
