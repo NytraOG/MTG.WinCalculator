@@ -7,11 +7,16 @@ namespace ClassLib
         public Player()
         {
             StartingLifeTotal = 20;
+            PlayerId          = Guid.NewGuid();
         }
-        public Player(string name, string startingLifeTotal)
-        {
-            Name              = name;
 
+        public Player(string name) : this()
+        {
+            Name = name;
+        }
+
+        public Player(string name, string startingLifeTotal) :this(name)
+        {
             if (string.IsNullOrWhiteSpace(startingLifeTotal) || !IsDigitOnly(startingLifeTotal))
             {
                 StartingLifeTotal = 20;
@@ -24,6 +29,7 @@ namespace ClassLib
             }
         }
 
+        public Guid   PlayerId          { get; }
         public string Name              { get; set; }
         public int    StartingLifeTotal { get; set; }
 

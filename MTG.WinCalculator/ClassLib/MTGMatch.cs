@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,9 +21,9 @@ namespace ClassLib
             ListOfPlayers.Add(player);
         }
 
-        public void RemovePlayerFromMatch(Player player2)
+        public void RemovePlayerFromMatch(Player player)
         {
-            throw new NotImplementedException();
+            ListOfPlayers.Remove(player);
         }
     }
 }

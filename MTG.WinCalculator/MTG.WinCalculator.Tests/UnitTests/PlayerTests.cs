@@ -46,12 +46,15 @@ namespace MTG.WinCalculator.Tests.UnitTests
         }
 
         [TestMethod]
-        public void SpielerAusMatchEntfernen()
+
+        [DataRow("","")]
+        [DataRow("Bernd","")]
+        public void SpielerAusMatchEntfernen(string name, string startingLifeTotal)
         {
             //Arrange
             var match = new MtgMatch();
-            var player1 = new Player();
-            var player2 = new Player();
+            var player1 = new Player(name);
+            var player2 = new Player(name);
 
             //Act
             match.AddPlayerToMatch(player1);
