@@ -44,14 +44,18 @@
     <Compile Include="Cards\BaseCard.cs" />
     <Compile Include="Cards\DamagingSpell.cs" />
     <Compile Include="Cards\Land.cs" />
+    <Compile Include="Enums\CardSuperType.cs" />
     <Compile Include="Environments\Battlefield.cs" />
+    <Compile Include="Environments\Deck.cs" />
     <Compile Include="Environments\Graveyard.cs" />
     <Compile Include="Environments\Hand.cs" />
+    <Compile Include="Interfaces\ICard.cs" />
     <Compile Include="Interfaces\IPlayCards.cs" />
+    <Compile Include="Manager\DeckManager.cs" />
     <Compile Include="MtgMatch.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TurnManager.cs" />
+    <Compile Include="Manager\TurnManager.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

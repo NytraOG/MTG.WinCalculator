@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLib.Cards
 {
-    class DamagingSpell
+    public class DamagingSpell : BaseCard
     {
     }
 }

@@ -1,8 +1,9 @@
 ﻿using System;
+using ClassLib.Interfaces;
 
 namespace ClassLib
 {
-    public class Player
+    public class Player : IPlayCards
     {
         public Player()
         {

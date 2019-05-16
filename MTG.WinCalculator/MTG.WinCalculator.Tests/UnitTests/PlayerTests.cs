@@ -46,7 +46,6 @@ namespace MTG.WinCalculator.Tests.UnitTests
         }
 
         [TestMethod]
-
         [DataRow("","")]
         [DataRow("Bernd","")]
         public void SpielerAusMatchEntfernen(string name, string startingLifeTotal)

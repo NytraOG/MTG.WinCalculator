@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLib.Cards
 {
-    class Land
+    public class Land : BaseCard
     {
     }
 }

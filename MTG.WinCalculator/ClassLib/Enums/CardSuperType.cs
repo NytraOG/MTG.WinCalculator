@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ClassLib.Enums
+{
+    public enum CardSuperType
+    {
+        Land,
+        Creature,
+        Artifact,
+        Enchantment,
+        Planeswalker,
+        Instant,
+        Sorcery,
+        ArtifactCreature,
+        EnchantmentCreatureS
+    }
+}
